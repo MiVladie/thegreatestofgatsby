@@ -1,5 +1,6 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import { Helmet } from 'react-helmet';
 
 import Layout from '../components/Layout/Layout';
 import Banner from '../components/Banner/Banner';
@@ -8,6 +9,10 @@ import Contact from '../components/Contact/Contact';
 const IndexPage = ({ data }) => {
     return (
         <Layout>
+            <Helmet>
+                <title>The Greatest Of Gatsby</title>
+            </Helmet>
+
             <Banner
                 main = 'Work, your way.'
                 description = 'Accord is a globar recruitment partnership delivering for clients and candidates across all industries and specialisms.'
