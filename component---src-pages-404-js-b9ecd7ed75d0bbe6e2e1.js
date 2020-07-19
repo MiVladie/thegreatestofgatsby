@@ -1,2 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[3],{w2l6:function(e,t,n){"use strict";n.r(t);var a=n("q1tI"),l=n.n(a),r=n("qhky"),u=n("yBb5");t.default=function(){return l.a.createElement(u.a,null,l.a.createElement(r.a,null,l.a.createElement("title",null,"404 | The Greatest Of Gatsby")))}}}]);
-//# sourceMappingURL=component---src-pages-404-js-b9ecd7ed75d0bbe6e2e1.js.map
