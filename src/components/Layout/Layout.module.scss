@@ -1,0 +1,17 @@
+.Layout {
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    position: relative;
+
+    .Content {
+        flex-grow: 1;
+
+        .Main {
+            width: 100%;
+        }
+    }
+}

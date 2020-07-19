@@ -1,22 +1,38 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from 'react';
+import { graphql } from 'gatsby';
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+import Layout from '../components/Layout/Layout';
+import Banner from '../components/Banner/Banner';
+import Contact from '../components/Contact/Contact';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
+const IndexPage = ({ data }) => {
+    return (
+        <Layout>
+            <Banner
+                main = 'Work, your way.'
+                description = 'Accord is a globar recruitment partnership delivering for clients and candidates across all industries and specialisms.'
+                image = { data.bannerImage.childImageSharp.fluid }
+                imageAlt = 'Accord Partnership' 
+                onButtonClick = { () => {} } 
+                buttonText = 'Partner with us' />
 
-export default IndexPage
+            <Contact
+                main = 'Partner with us'
+                description = 'We provide you with the infrastructure and community so that you can rapidly build your own business.' />
+        </Layout>
+    )
+};
+
+export default IndexPage;
+
+export const query = graphql`
+    query {
+        bannerImage: file(relativePath: { eq: "banner.png" }) {
+            childImageSharp {
+                fluid(maxWidth: 940) {
+                    ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`;

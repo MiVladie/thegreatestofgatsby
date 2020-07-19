@@ -1,0 +1,129 @@
+$lightblue: #0099FF;
+$black: #172838;
+
+.Banner {
+    width: 100%;
+    overflow: hidden;
+
+    .Container {
+        width: 90%;
+
+        margin: 70px auto 40px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .Wrapper {
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            flex-flow: column;
+
+            .Info {
+                width: 100%;
+
+                .Main {
+                    font-size: 2em;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 500;
+                    color: $lightblue;
+
+                    margin-bottom: 0.75em;
+                }
+                
+                .Description {
+                    font-family: 'Poppins', sans-serif;
+                    line-height: 22px;
+                    color: $black;
+                    
+                    margin-bottom: 2em;
+                }
+            }
+
+            .Image {
+                width: 80%;
+                margin: 0 auto 2.5em;
+
+                img {
+                    width: 100%;
+
+                    object-fit: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 720px) {
+    .Banner {
+        height: 80vh;
+
+        .Container {
+            width: 85%;
+            height: 100%;
+
+            margin: 0 auto;
+
+            .Wrapper {
+                justify-content: space-between;
+                flex-flow: row;
+                position: relative;
+
+                .Info {
+                    max-width: 450px;
+                    z-index: 500;
+
+                    .Main {
+                        font-size: 3em;
+                    }
+
+                    .Description {
+                        font-size: 20px;
+                        line-height: 26px;
+                    }
+                }
+
+                .Image {
+                    position: absolute;
+                    right: -100px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .Banner {
+        height: 100vh;
+
+        .Container {
+            max-width: 1440px;
+            
+            .Wrapper {
+                .Info {
+                    max-width: 500px;
+
+                    .Main {
+                        font-size: 3.5em;
+                    }
+
+                    .Description {
+                        font-size: 18px;
+                        line-height: 30px;
+                    }
+                }
+
+                .Image {
+                    width: 70%;
+                    right: -200px;
+                }
+            }
+        }
+    }
+}
