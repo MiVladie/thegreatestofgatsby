@@ -6,61 +6,51 @@ $black: #172838;
     width: 100%;
     background-color: $lightgrey;
 
-    .Container {
-        width: 90%;
+    .Wrapper {
+        width: 100%;
 
-        margin: 0 auto;
         padding: 2rem 0;
-
-        .Wrapper {
+        
+        .Info {
             width: 100%;
+
+            .Main {
+                font-size: 1.75em;
+                font-family: 'Poppins', sans-serif;
+                color: $lightblue;
+
+                margin-bottom: 0.75em;
+            }
             
-            .Info {
-                width: 100%;
-
-                .Main {
-                    font-size: 1.75em;
-                    font-family: 'Poppins', sans-serif;
-                    color: $lightblue;
-
-                    margin-bottom: 0.75em;
-                }
+            .Description {
+                font-family: 'Poppins', sans-serif;
+                line-height: 22px;
+                color: $black;
                 
-                .Description {
-                    font-family: 'Poppins', sans-serif;
-                    line-height: 22px;
-                    color: $black;
-                    
-                    margin-bottom: 2em;
-                }
+                margin-bottom: 2em;
             }
+        }
 
-            .Form {
-                width: 100%;
-            }
+        .Form {
+            width: 100%;
         }
     }
 }
 
 @media (min-width: 720px) {
     .Contact {
-        .Container {
-            width: 85%;
-
+        .Wrapper {
             padding: 6rem 0;
+            max-width: 550px;
 
-            .Wrapper {
-                max-width: 550px;
+            .Info {
+                .Main {
+                    font-size: 2em;
+                }
 
-                .Info {
-                    .Main {
-                        font-size: 2em;
-                    }
-
-                    .Description {
-                        font-size: 20px;
-                        line-height: 26px;
-                    }
+                .Description {
+                    font-size: 20px;
+                    line-height: 26px;
                 }
             }
         }
@@ -69,33 +59,29 @@ $black: #172838;
 
 @media (min-width: 1200px) {
     .Contact {
-        .Container {
-            max-width: 1440px;
+        .Wrapper {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-            .Wrapper {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+            max-width: none;
 
-                max-width: none;
+            .Info {
+                max-width: 500px;
 
-                .Info {
-                    max-width: 500px;
-
-                    .Main {
-                        font-size: 2.25em;
-                    }
-
-                    .Description {
-                        font-size: 18px;
-                        line-height: 30px;
-                    }
+                .Main {
+                    font-size: 2.25em;
                 }
 
-                .Form {
-                    margin-left: 4em;
-                    max-width: 500px;
+                .Description {
+                    font-size: 18px;
+                    line-height: 30px;
                 }
+            }
+
+            .Form {
+                margin-left: 4em;
+                max-width: 500px;
             }
         }
     }

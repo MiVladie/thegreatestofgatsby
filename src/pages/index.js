@@ -1,5 +1,5 @@
 import React from 'react';
-import { graphql } from 'gatsby';
+import { graphql, navigate } from 'gatsby';
 import { Helmet } from 'react-helmet';
 
 import Layout from '../components/Layout/Layout';
@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
                 description = 'Accord is a globar recruitment partnership delivering for clients and candidates across all industries and specialisms.'
                 image = { data.bannerImage.childImageSharp.fluid }
                 imageAlt = 'Accord Partnership' 
-                onButtonClick = { () => {} } 
+                onButtonClick = { () => navigate('/partner/') } 
                 buttonText = 'Partner with us' />
 
             <Contact

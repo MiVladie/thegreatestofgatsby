@@ -11,9 +11,6 @@ $action: #152433;
     padding: 1.25rem 0;
 
     .Container {
-        width: 90%;
-        margin: 0 auto;
-
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -90,9 +87,6 @@ $action: #152433;
 @media (min-width: 720px) {
     .Header {
         .Container {
-            width: 85%;
-            max-width: 1440px;
-
             .Logo {
                 width: 150px;
                 height: 50px;

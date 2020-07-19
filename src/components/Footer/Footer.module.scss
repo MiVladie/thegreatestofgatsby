@@ -7,9 +7,6 @@ $lightblue: #0099FF;
     background-color: $black;
 
     .Container {
-        width: 90%;
-
-        margin: 0 auto;
         padding: 1rem 0;
 
         .Wrapper {
@@ -114,13 +111,8 @@ $lightblue: #0099FF;
 }
 
 @media (min-width: 720px) {
-    .Footer {
-        .Container {
-            max-width: 1440px;
-            
-            width: 85%;
-            padding: 1rem 0;
-
+    .Footer {  
+        .Container {     
             .Wrapper {
                 display: flex;
                 align-items: flex-start;
@@ -154,12 +146,12 @@ $lightblue: #0099FF;
                     .Action {
                         display: block;
                         width: 100%;
-    
+
                         font-family: 'Montserrat', sans-serif;
                         font-size: 1rem;
                         font-weight: 500;
                         color: white;
-    
+
                         margin: 0 25px 0 0;
                     }
 

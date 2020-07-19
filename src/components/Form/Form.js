@@ -15,6 +15,7 @@ const Form = ({ data, buttonText, onSubmit }) => {
         let err = isFormValid(data, values);
 
         if(err == null) {
+            setValues(null);
             onSubmit(values);
         } else {
             console.log(err);

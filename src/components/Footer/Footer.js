@@ -1,12 +1,13 @@
 import React from 'react';
 
+import Container from '../Container/Container';
 import Logo from '../UI/Logo/Logo';
 
 import classes from './Footer.module.scss';
 
 const Footer = () => (
     <footer className = { classes.Footer }>
-        <div className = { classes.Container }>
+        <Container className = { classes.Container }>
             <div className = { classes.Wrapper }>
                 <div className = { classes.Main }>
                     <div className = { classes.Column }>
@@ -54,7 +55,7 @@ const Footer = () => (
             </div>
 
             <p className = { classes.Copyright }>&copy; Copyright { new Date().getFullYear() }. All Rights Reserved</p>
-        </div>
+        </Container>
     </footer>
 );
 

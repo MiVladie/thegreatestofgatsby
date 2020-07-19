@@ -1,12 +1,13 @@
 import React from 'react';
 
+import Container from '../Container/Container';
 import Logo from '../UI/Logo/Logo';
 
 import classes from './Header.module.scss';
 
 const Header = () => (
     <header className = { classes.Header }>
-        <div className = { classes.Container }>
+        <Container className = { classes.Container }>
             <Logo />
 
             <div className = { classes.Social }>
@@ -29,7 +30,7 @@ const Header = () => (
                     </li>
                 </ul>
             </div>
-        </div>
+        </Container>
     </header>
 );
 

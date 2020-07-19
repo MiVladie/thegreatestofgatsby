@@ -1,12 +1,13 @@
 import React from 'react';
 
+import Container from '../Container/Container';
 import Form from '../Form/Form';
 
 import classes from './Contact.module.scss';
 
 const Contact = ({ main, description }) => (
     <div className = { classes.Contact }>
-        <div className = { classes.Container }>
+        <Container>
             <div className = { classes.Wrapper }>
                 <div className = { classes.Info }>
                     <h1 className = { classes.Main }>{ main }</h1>
@@ -24,7 +25,7 @@ const Contact = ({ main, description }) => (
                         onSubmit = { (values) => console.log(values) } />
                 </div>
             </div>
-        </div>
+        </Container>
     </div>
 );
 

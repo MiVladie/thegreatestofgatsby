@@ -6,9 +6,8 @@ $black: #172838;
     overflow: hidden;
 
     .Container {
-        width: 90%;
-
-        margin: 70px auto 40px;
+        margin-top: 70px;
+        margin-bottom: 40px;
 
         display: flex;
         justify-content: center;
@@ -65,10 +64,7 @@ $black: #172838;
         height: 80vh;
 
         .Container {
-            width: 85%;
             height: 100%;
-
-            margin: 0 auto;
 
             .Wrapper {
                 justify-content: space-between;
@@ -102,9 +98,7 @@ $black: #172838;
     .Banner {
         height: 100vh;
 
-        .Container {
-            max-width: 1440px;
-            
+        .Container {            
             .Wrapper {
                 .Info {
                     max-width: 500px;
