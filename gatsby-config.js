@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: "/thegreatestofgatsby",
+  pathPrefix: `/thegreatestofgatsby`,
   siteMetadata: {
     title: `The Greatest Of Gatsby`,
     author: `@mivladie`,
