@@ -25,7 +25,7 @@ export default NotFound;
 
 export const query = graphql`
     query {
-        bannerImage: file(relativePath: { eq: "banner.png" }) {
+        bannerImage: file(relativePath: { eq: "partnership.png" }) {
             childImageSharp {
                 fluid(maxWidth: 940) {
                     ...GatsbyImageSharpFluid
