@@ -1,99 +1,78 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
+# :cherry_blossom: About
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+The Greatest of Gatsby is a simple web application made with GatsbyJS.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+Website preview:
+https://mivladie.github.io/thegreatestofgatsby/
 
-## 🚀 Quick start
+# :memo: Table of Contents
 
-1.  **Create a Gatsby site.**
+* [:memo: Table of Contents](#memo-table-of-contents)
+* [:rocket: Quick Start](#rocket-quick-start)
+  * [Step 1: Installing the dependencies](#step-1-installing-the-dependencies)
+  * [Step 2: Launching the server](#step-2-launching-the-server)
+* [:desktop_computer: Installation](#desktop_computer-installation)
+	* [NodeJS](#nodejs)
+* [:keyboard: Available Scripts](#keyboard-available-scripts)
+* [:green_book: Learn More](#green_book-learn-more)
+	* [ReactJS](#reactjs)
+	* [GatsbyJS](#gatsbyjs)
+	* [Sass](#sass)
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+# :rocket: Quick Start
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+> You must have installed all of the software applications in the [installation](#desktop_computer-installation) section.
 
-1.  **Start developing.**
+Quick start guide to set the server up and running.
 
-    Navigate into your new site’s directory and start it up.
+## Step 1: Installing the dependencies
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+### Run `npm install`
 
-1.  **Open the source code and start editing!**
+Installs all of the necessary dependencies.
 
-    Your site is now running at `http://localhost:8000`!
+## Step 2: Launching the server
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+### Run `npm start`
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+Starts the server in the development mode.
 
-## 🧐 What's inside?
+# :desktop_computer: Installation
 
-A quick look at the top-level files and directories you'll see in a Gatsby project.
+In order to run the server, you must have installed all of the necessary software listed below.
 
-    .
-    ├── node_modules
-    ├── src
-    ├── .gitignore
-    ├── .prettierrc
-    ├── gatsby-browser.js
-    ├── gatsby-config.js
-    ├── gatsby-node.js
-    ├── gatsby-ssr.js
-    ├── LICENSE
-    ├── package-lock.json
-    ├── package.json
-    └── README.md
+## NodeJS
 
-1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
+Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 
-2.  **`/src`**: This directory will contain all of the code related to what you will see on the front-end of your site (what you see in the browser) such as your site header or a page template. `src` is a convention for “source code”.
+* [Download](https://nodejs.org/en/)
+# :keyboard: Available Scripts
 
-3.  **`.gitignore`**: This file tells git which files it should not track / not maintain a version history for.
+In the project directory, you can run:
+### `npm install`
 
-4.  **`.prettierrc`**: This is a configuration file for [Prettier](https://prettier.io/). Prettier is a tool to help keep the formatting of your code consistent.
+Installs all of the necessary dependencies.
+### `npm start`
 
-5.  **`gatsby-browser.js`**: This file is where Gatsby expects to find any usage of the [Gatsby browser APIs](https://www.gatsbyjs.org/docs/browser-apis/) (if any). These allow customization/extension of default Gatsby settings affecting the browser.
+Runs the app in the development mode on port `:3000`.
+### `npm run build`
 
-6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
+Builds the app for production to the `/build` folder.
+# :green_book: Learn More
 
-7.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
+References to the packages used in the project.
+## ReactJS
 
-8.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
+React is a JavaScript library for building user interfaces.
 
-9.  **`LICENSE`**: This Gatsby starter is licensed under the 0BSD license. This means that you can see this file as a placeholder and replace it with your own license.
+* [Getting Started](https://reactjs.org/docs/getting-started.html)
+## GatsbyJS
 
-10. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
+Gatsby is a React-based open source framework with performance, scalability and security built-in.
 
-11. **`package.json`**: A manifest file for Node.js projects, which includes things like metadata (the project’s name, author, etc). This manifest is how npm knows which packages to install for your project.
+* [Documentation](https://www.gatsbyjs.com/docs/)
+## Sass
 
-12. **`README.md`**: A text file containing useful reference information about your project.
+Sass is a preprocessor scripting language that is interpreted or compiled into CSS.
 
-## 🎓 Learning Gatsby
-
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
-
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
+* [Documentation](https://sass-lang.com/documentation)
